@@ -7,5 +7,182 @@ import "@/styles/globals.css";
 <Layout title="Audiophile e-commerce website.">
   <!-- The Header -->
   <Header />
-  <main></main>
+  <main>
+    <!-- Intro To The New Product XX99 Mark II Headphones -->
+    <section class="relative overflow-hidden">
+      <picture class="">
+        <source
+          media="(min-width:1440px )"
+          srcset="/assets/home/desktop/image-hero.jpg"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/assets/home/tablet/image-header.jpg"
+        />
+        <img
+          src="/assets/home/mobile/image-header.jpg"
+          alt=""
+          class="relative bottom-[5rem] object-cover"
+        />
+      </picture>
+      <div
+        class="absolute top-0 flex h-[100%] w-[100%] flex-col items-center justify-center text-center xl:items-start xl:pb-28 xl:pl-[10.31rem] xl:text-left"
+      >
+        <h1
+          class="mb-4 text-sm font-normal uppercase leading-normal tracking-[0.625rem] text-white opacity-[0.4964] md:mb-6"
+        >
+          New product
+        </h1>
+        <h2
+          class="mb-6 w-[20.5rem] text-[2.25rem] font-bold uppercase leading-10 tracking-[0.08038rem] text-white md:w-[24.75rem] md:text-[3.5rem] md:leading-[3.625rem] md:tracking-[0.125rem]"
+        >
+          XX99 Mark II Headphones
+        </h2>
+        <p
+          class="mb-7 w-[20.5rem] text-[0.9375rem] font-normal leading-[1.5625rem] text-white/75 md:mb-10 md:w-[21.8125rem]"
+        >
+          Experience natural, lifelike audio and exceptional build quality made
+          for the passionate music enthusiast.
+        </p>
+        <button
+          type="button"
+          class="h-12 w-40 cursor-pointer bg-[#D87D4A] text-sm uppercase leading-normal tracking-[0.0625rem] text-white transition-colors duration-300 ease-in hover:bg-[#FBAF85]"
+        >
+          See product
+        </button>
+      </div>
+    </section>
+    <!-- Line Of The Products -->
+    <section
+      class="mx-6 mb-[7.5rem] mt-20 flex flex-col items-center gap-[4.25rem] md:mb-24 md:ml-10 md:mr-[2.44rem] md:flex-row md:justify-between md:gap-[0.63rem] xl:mx-[10.31rem] xl:mb-[10.5rem] xl:gap-[1.88rem]"
+    >
+      <!-- Headphones -->
+      <div
+        class="relative flex h-[10.3125rem] w-[20.4375rem] flex-col items-center justify-center rounded-lg bg-[#F1F1F1] pb-[1.37rem] pt-[5.5rem] text-center md:w-[13.9375rem] xl:h-[12.75rem] xl:w-[21.875rem] xl:pt-[7.25rem]"
+      >
+        <img
+          src="/assets/shared/desktop/image-category-thumbnail-headphones.png"
+          alt=""
+          class="absolute top-[-3.5rem] w-40"
+        />
+        <h3
+          class="mb-[1.06rem] text-[0.9375rem] font-bold leading-normal tracking-[0.06694rem] text-black xl:mb-[0.94rem] xl:text-lg"
+        >
+          Headphones
+        </h3>
+        <a
+          href="/headphones"
+          class="flex cursor-pointer items-center gap-[0.83rem] text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-black/50 transition-colors duration-300 ease-in hover:text-[#D87D4A]"
+          >Shop
+          <img
+            src="/assets/shared/desktop/icon-arrow-right.svg"
+            alt="arrow"
+            class=""
+          />
+        </a>
+      </div>
+      <!-- Speakers -->
+      <div
+        class="relative flex h-[10.3125rem] w-[20.4375rem] flex-col items-center justify-center rounded-lg bg-[#F1F1F1] pb-[1.37rem] pt-[5.5rem] text-center md:w-[13.9375rem] xl:h-[12.75rem] xl:w-[21.875rem] xl:pt-[7.25rem]"
+      >
+        <img
+          src="/assets/shared/desktop/image-category-thumbnail-speakers.png"
+          alt=""
+          class="absolute top-[-3.5rem] w-40"
+        />
+        <h3
+          class="mb-[1.06rem] text-[0.9375rem] font-bold leading-normal tracking-[0.06694rem] text-black xl:mb-[0.94rem] xl:text-lg"
+        >
+          speakers
+        </h3>
+        <a
+          href="/speakers"
+          class="flex cursor-pointer items-center gap-[0.83rem] text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-black/50 transition-colors duration-300 ease-in hover:text-[#D87D4A]"
+          >Shop
+          <img
+            src="/assets/shared/desktop/icon-arrow-right.svg"
+            alt="arrow"
+            class=""
+          />
+        </a>
+      </div>
+      <!-- Earphones -->
+      <div
+        class="relative flex h-[10.3125rem] w-[20.4375rem] flex-col items-center justify-center rounded-lg bg-[#F1F1F1] pb-[1.37rem] pt-[5.5rem] text-center md:w-[13.9375rem] xl:h-[12.75rem] xl:w-[21.875rem] xl:pt-[7.25rem]"
+      >
+        <img
+          src="/assets/shared/desktop/image-category-thumbnail-earphones.png"
+          alt=""
+          class="absolute top-[-3.5rem] w-40"
+        />
+        <h3
+          class="mb-[1.06rem] text-[0.9375rem] font-bold leading-normal tracking-[0.06694rem] text-black xl:mb-[0.94rem] xl:text-lg"
+        >
+          earphones
+        </h3>
+        <a
+          href="/earphones"
+          class="flex cursor-pointer items-center gap-[0.83rem] text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-black/50 transition-colors duration-300 ease-in hover:text-[#D87D4A]"
+          >Shop
+          <img
+            src="/assets/shared/desktop/icon-arrow-right.svg"
+            alt="arrow"
+            class=""
+          />
+        </a>
+      </div>
+    </section>
+    <!-- Intro To ZX9 Speaker  -->
+    <section
+      class="relative mx-6 flex flex-col items-center justify-center gap-8 overflow-hidden rounded-lg bg-[#D87D4A] py-[3.44rem] pb-6 pl-[1.44rem] pr-6 md:mb-8 md:ml-[2.44rem] md:mr-10 md:pb-16 md:pt-[3.25rem] xl:mx-[10.31rem] xl:flex-row xl:items-end xl:justify-between xl:gap-12 xl:pl-[7.34rem] xl:pr-[5.94rem]"
+    >
+      <img
+        src="/assets/home/desktop/pattern-circles.svg"
+        alt=""
+        class="absolute -top-24 left-0 h-[100%] w-[100%] object-cover"
+      />
+      <picture>
+        <source
+          media="(min-width:1440px )"
+          srcset="/assets/home/desktop/image-speaker-zx9.png"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/assets/home/tablet/image-speaker-zx9.png"
+        />
+        <img
+          src="/assets/home/mobile/image-speaker-zx9.png"
+          alt=""
+          class="z-40 h-[12.9375rem] w-[10.7655rem] md:h-[14.8125rem] md:w-[12.32575rem] xl:relative xl:-bottom-20 xl:h-[30.8125rem] xl:w-[25.63963rem]"
+        />
+      </picture>
+      <div
+        class="z-40 flex flex-col items-center justify-center gap-6 text-center xl:items-start xl:pb-20 xl:text-left"
+      >
+        <h1
+          class="w-[17.5rem] text-4xl font-bold uppercase leading-10 tracking-[0.08038rem] text-white md:w-[16.3125rem] md:text-[3.5rem] md:leading-[3.625rem] md:tracking-[0.125rem]"
+        >
+          ZX9 speaker
+        </h1>
+        <p
+          class="w-[17.5rem] text-[0.9375rem] font-normal leading-[1.5625rem] text-white/75 md:w-[21.8125rem]"
+        >
+          Upgrade to premium speakers that are phenomenally built to deliver
+          truly remarkable sound.
+        </p>
+        <a
+          href="/product-zx9-speaker"
+          class="flex h-12 w-40 items-center justify-center bg-black text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-white transition-colors duration-300 ease-in hover:bg-[#4C4C4C] md:mt-4"
+        >
+          See product
+        </a>
+      </div>
+    </section>
+  </main>
 </Layout>
+
+<style is:inline>
+  header {
+    background-color: #191919;
+  }
+</style>

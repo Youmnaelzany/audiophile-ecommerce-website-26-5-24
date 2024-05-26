@@ -3,14 +3,14 @@ import "@/styles/globals.css";
 ---
 
 <header
-  class="flex h-[5.625rem] items-center justify-between bg-black px-6 pb-[2.06rem] pt-8 md:pl-[2.44rem] md:pt-9 xl:h-[6.0625rem] xl:px-[10.31rem] xl:pb-[2.31rem] xl:pt-[2.19rem]"
+  class="relative z-50 flex h-[5.625rem] items-center justify-between px-6 pb-[2.06rem] pt-8 md:pl-[2.44rem] md:pt-9 xl:h-[6.0625rem] xl:px-[10.31rem] xl:pb-[2.31rem] xl:pt-[2.19rem]"
 >
   <!-- Navication Buttons -->
   <div class="flex items-center justify-between gap-[4.75rem] md:gap-[2.63rem]">
     <!-- Hamburher Menu Button -->
     <button type="button">
       <img
-        src="/public/assets/shared/tablet/icon-hamburger.svg"
+        src="/assets/shared/tablet/icon-hamburger.svg"
         alt="open Menu"
         class="cursor-pointer xl:hidden"
         id="openMenu"
@@ -18,11 +18,7 @@ import "@/styles/globals.css";
     </button>
     <!-- Logo -->
     <a href="/" class="cursor-pointer">
-      <img
-        src="/public/assets/shared/desktop/logo.svg"
-        alt="logo"
-        class=""
-      /></a
+      <img src="/assets/shared/desktop/logo.svg" alt="logo" class="" /></a
     >
   </div>
   <!-- Navigation Links For Desktop -->
@@ -62,7 +58,7 @@ import "@/styles/globals.css";
   <div class="">
     <button type="button">
       <img
-        src="/public/assets/shared/desktop/icon-cart.svg"
+        src="/assets/shared/desktop/icon-cart.svg"
         alt="The cart"
         class="cursor-pointer"
         id="goCart"
@@ -71,7 +67,7 @@ import "@/styles/globals.css";
   </div>
   <!-- Navigation Menu For Mobile & Tablet  -->
   <nav
-    class="absolute left-0 top-[5.625rem] hidden h-[46.875rem] w-[100%] bg-white md:h-[21.25rem]"
+    class="absolute left-0 top-[5.625rem] hidden h-[46.875rem] w-[100%] rounded-b-lg bg-white md:h-[21.25rem]"
     id="menuBar"
   >
     <div
@@ -82,7 +78,7 @@ import "@/styles/globals.css";
         class="relative flex h-[10.3125rem] w-[20.4375rem] flex-col items-center justify-center rounded-lg bg-[#F1F1F1] pb-[1.37rem] pt-[5.5rem] text-center md:w-[13.9375rem]"
       >
         <img
-          src="/public/assets/shared/desktop/image-category-thumbnail-headphones.png"
+          src="/assets/shared/desktop/image-category-thumbnail-headphones.png"
           alt=""
           class="absolute top-[-3.5rem] w-40"
         />
@@ -93,10 +89,10 @@ import "@/styles/globals.css";
         </h3>
         <a
           href="/headphones"
-          class="flex items-center gap-[0.83rem] text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-black/50"
+          class="flex cursor-pointer items-center gap-[0.83rem] text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-black/50 transition-colors duration-300 ease-in hover:text-[#D87D4A]"
           >Shop
           <img
-            src="/public/assets/shared/desktop/icon-arrow-right.svg"
+            src="/assets/shared/desktop/icon-arrow-right.svg"
             alt="arrow"
             class=""
           />
@@ -107,7 +103,7 @@ import "@/styles/globals.css";
         class="relative flex h-[10.3125rem] w-[20.4375rem] flex-col items-center justify-center rounded-lg bg-[#F1F1F1] pb-[1.37rem] pt-[5.5rem] text-center md:w-[13.9375rem]"
       >
         <img
-          src="/public/assets/shared/desktop/image-category-thumbnail-speakers.png"
+          src="/assets/shared/desktop/image-category-thumbnail-speakers.png"
           alt=""
           class="absolute top-[-3.5rem] w-40"
         />
@@ -118,10 +114,10 @@ import "@/styles/globals.css";
         </h3>
         <a
           href="/speakers"
-          class="flex items-center gap-[0.83rem] text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-black/50"
+          class="flex cursor-pointer items-center gap-[0.83rem] text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-black/50 transition-colors duration-300 ease-in hover:text-[#D87D4A]"
           >Shop
           <img
-            src="/public/assets/shared/desktop/icon-arrow-right.svg"
+            src="/assets/shared/desktop/icon-arrow-right.svg"
             alt="arrow"
             class=""
           />
@@ -132,7 +128,7 @@ import "@/styles/globals.css";
         class="relative flex h-[10.3125rem] w-[20.4375rem] flex-col items-center justify-center rounded-lg bg-[#F1F1F1] pb-[1.37rem] pt-[5.5rem] text-center md:w-[13.9375rem]"
       >
         <img
-          src="/public/assets/shared/desktop/image-category-thumbnail-earphones.png"
+          src="/assets/shared/desktop/image-category-thumbnail-earphones.png"
           alt=""
           class="absolute top-[-3.5rem] w-40"
         />
@@ -143,10 +139,10 @@ import "@/styles/globals.css";
         </h3>
         <a
           href="/earphones"
-          class="flex items-center gap-[0.83rem] text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-black/50"
+          class="flex cursor-pointer items-center gap-[0.83rem] text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-black/50 transition-colors duration-300 ease-in hover:text-[#D87D4A]"
           >Shop
           <img
-            src="/public/assets/shared/desktop/icon-arrow-right.svg"
+            src="/assets/shared/desktop/icon-arrow-right.svg"
             alt="arrow"
             class=""
           />
@@ -154,12 +150,30 @@ import "@/styles/globals.css";
       </div>
     </div>
   </nav>
+  <!-- The Cart -->
+  <nav
+    class="absolute right-0 top-[5.625rem] mx-6 mt-6 hidden h-[30.5rem] w-[20.4375rem] rounded-lg bg-white md:right-0 md:mr-12 md:max-2xl:h-[30.5rem] md:max-2xl:w-[23.5625rem] xl:mr-[10.31rem] xl:mt-8"
+    id="theCart"
+  >
+  </nav>
 </header>
+
+<style is:global>
+  header {
+    background-color: black;
+  }
+</style>
 
 <script is:inline>
   const openMenu = document.getElementById("openMenu");
   const menuBar = document.getElementById("menuBar");
+  const goCart = document.getElementById("goCart");
+  const theCart = document.getElementById("theCart");
+
   openMenu.addEventListener("click", () => {
     menuBar.classList.toggle("hidden");
+  });
+  goCart.addEventListener("click", () => {
+    theCart.classList.toggle("hidden");
   });
 </script>
