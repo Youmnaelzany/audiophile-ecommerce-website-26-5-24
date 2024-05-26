@@ -1,0 +1,165 @@
+---
+import "@/styles/globals.css";
+---
+
+<header
+  class="flex h-[5.625rem] items-center justify-between bg-black px-6 pb-[2.06rem] pt-8 md:pl-[2.44rem] md:pt-9 xl:h-[6.0625rem] xl:px-[10.31rem] xl:pb-[2.31rem] xl:pt-[2.19rem]"
+>
+  <!-- Navication Buttons -->
+  <div class="flex items-center justify-between gap-[4.75rem] md:gap-[2.63rem]">
+    <!-- Hamburher Menu Button -->
+    <button type="button">
+      <img
+        src="/public/assets/shared/tablet/icon-hamburger.svg"
+        alt="open Menu"
+        class="cursor-pointer xl:hidden"
+        id="openMenu"
+      />
+    </button>
+    <!-- Logo -->
+    <a href="/" class="cursor-pointer">
+      <img
+        src="/public/assets/shared/desktop/logo.svg"
+        alt="logo"
+        class=""
+      /></a
+    >
+  </div>
+  <!-- Navigation Links For Desktop -->
+  <nav class="hidden xl:flex">
+    <ul class="flex items-center justify-between gap-[2.12rem]">
+      <li>
+        <a
+          href="/"
+          class="tracking-0.125rem cursor-pointer text-sm font-bold uppercase leading-[1.5625rem] text-white transition-colors duration-300 ease-in hover:text-[#D87D4A]"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a
+          href="/headphones"
+          class="tracking-0.125rem cursor-pointer text-sm font-bold uppercase leading-[1.5625rem] text-white transition-colors duration-300 ease-in hover:text-[#D87D4A]"
+          >Headphones</a
+        >
+      </li>
+      <li>
+        <a
+          href="/speakers"
+          class="tracking-0.125rem cursor-pointer text-sm font-bold uppercase leading-[1.5625rem] text-white transition-colors duration-300 ease-in hover:text-[#D87D4A]"
+          >Speakers</a
+        >
+      </li>
+      <li>
+        <a
+          href="/speakers"
+          class="tracking-0.125rem cursor-pointer text-sm font-bold uppercase leading-[1.5625rem] text-white transition-colors duration-300 ease-in hover:text-[#D87D4A]"
+          >Earphones</a
+        >
+      </li>
+    </ul>
+  </nav>
+  <!-- The Cart -->
+  <div class="">
+    <button type="button">
+      <img
+        src="/public/assets/shared/desktop/icon-cart.svg"
+        alt="The cart"
+        class="cursor-pointer"
+        id="goCart"
+      />
+    </button>
+  </div>
+  <!-- Navigation Menu For Mobile & Tablet  -->
+  <nav
+    class="absolute left-0 top-[5.625rem] hidden h-[46.875rem] w-[100%] bg-white md:h-[21.25rem]"
+    id="menuBar"
+  >
+    <div
+      class="flex flex-col items-center gap-[4.25rem] px-6 pb-[2.19rem] pt-[5.25rem] md:flex-row md:justify-between md:gap-[0.63rem] md:pb-[4.19rem] md:pl-10 md:pr-[2.44rem] md:pt-[6.75rem]"
+    >
+      <!-- Headphones -->
+      <div
+        class="relative flex h-[10.3125rem] w-[20.4375rem] flex-col items-center justify-center rounded-lg bg-[#F1F1F1] pb-[1.37rem] pt-[5.5rem] text-center md:w-[13.9375rem]"
+      >
+        <img
+          src="/public/assets/shared/desktop/image-category-thumbnail-headphones.png"
+          alt=""
+          class="absolute top-[-3.5rem] w-40"
+        />
+        <h3
+          class="0.06694rem mb-[1.06rem] text-[0.9375rem] font-bold leading-normal tracking-[0.06694rem] text-black"
+        >
+          Headphones
+        </h3>
+        <a
+          href="/headphones"
+          class="flex items-center gap-[0.83rem] text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-black/50"
+          >Shop
+          <img
+            src="/public/assets/shared/desktop/icon-arrow-right.svg"
+            alt="arrow"
+            class=""
+          />
+        </a>
+      </div>
+      <!-- Speakers -->
+      <div
+        class="relative flex h-[10.3125rem] w-[20.4375rem] flex-col items-center justify-center rounded-lg bg-[#F1F1F1] pb-[1.37rem] pt-[5.5rem] text-center md:w-[13.9375rem]"
+      >
+        <img
+          src="/public/assets/shared/desktop/image-category-thumbnail-speakers.png"
+          alt=""
+          class="absolute top-[-3.5rem] w-40"
+        />
+        <h3
+          class="0.06694rem mb-[1.06rem] text-[0.9375rem] font-bold leading-normal tracking-[0.06694rem] text-black"
+        >
+          speakers
+        </h3>
+        <a
+          href="/speakers"
+          class="flex items-center gap-[0.83rem] text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-black/50"
+          >Shop
+          <img
+            src="/public/assets/shared/desktop/icon-arrow-right.svg"
+            alt="arrow"
+            class=""
+          />
+        </a>
+      </div>
+      <!-- Earphones -->
+      <div
+        class="relative flex h-[10.3125rem] w-[20.4375rem] flex-col items-center justify-center rounded-lg bg-[#F1F1F1] pb-[1.37rem] pt-[5.5rem] text-center md:w-[13.9375rem]"
+      >
+        <img
+          src="/public/assets/shared/desktop/image-category-thumbnail-earphones.png"
+          alt=""
+          class="absolute top-[-3.5rem] w-40"
+        />
+        <h3
+          class="0.06694rem mb-[1.06rem] text-[0.9375rem] font-bold leading-normal tracking-[0.06694rem] text-black"
+        >
+          earphones
+        </h3>
+        <a
+          href="/earphones"
+          class="flex items-center gap-[0.83rem] text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-black/50"
+          >Shop
+          <img
+            src="/public/assets/shared/desktop/icon-arrow-right.svg"
+            alt="arrow"
+            class=""
+          />
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script is:inline>
+  const openMenu = document.getElementById("openMenu");
+  const menuBar = document.getElementById("menuBar");
+  openMenu.addEventListener("click", () => {
+    menuBar.classList.toggle("hidden");
+  });
+</script>
