@@ -13,7 +13,7 @@ import Footer from "@/components/Footer.astro";
   <main>
     <!-- Intro Headphones Products-->
     <section
-      class="xl:h-15rem[] flex h-[6.44rem] w-[100%] items-center justify-center bg-black leading-[2.75rem] md:h-[15.44rem] md:text-[2.5rem] md:tracking-[0.08931rem]"
+      class="xl:h-15 flex h-[6.44rem] w-[100%] items-center justify-center bg-black leading-[2.75rem] md:h-[15.44rem] md:text-[2.5rem] md:tracking-[0.08931rem]"
     >
       <h1
         class="text-[1.75rem] font-bold uppercase leading-normal tracking-[0.125rem] text-white"
@@ -23,23 +23,8 @@ import Footer from "@/components/Footer.astro";
     </section>
     <!-- XX99 Mark II Headphones -->
     <section
-      class="mx-6 mb-[7.5rem] mt-16 flex flex-col items-center justify-center gap-8 md:ml-[2.44rem] md:mr-10 md:mt-[7.5rem] md:gap-9 xl:mx-[10.31rem] xl:mb-40 xl:mt-40 xl:flex-row xl:justify-between"
+      class="mx-6 mb-[7.5rem] mt-16 flex flex-col-reverse items-center justify-center gap-8 md:ml-[2.44rem] md:mr-10 md:mt-[7.5rem] md:gap-9 xl:mx-[10.31rem] xl:mb-40 xl:mt-40 xl:flex-row-reverse xl:justify-between"
     >
-      <picture>
-        <source
-          media="(min-width: 1440px)"
-          srcset="/assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg"
-        />
-        <source
-          media="(min-width: 768px)"
-          srcset="/assets/product-xx99-mark-two-headphones/tablet/image-category-page-preview.jpg"
-        />
-        <img
-          src="/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg"
-          alt="Photo of XX99 Mark II Headphones"
-          class="rounded-lg object-cover xl:h-[35rem] xl:w-[33.75rem]"
-        />
-      </picture>
       <div
         class="flex flex-col items-center justify-center gap-6 text-center md:gap-4 xl:items-start xl:justify-start xl:text-left"
       >
@@ -66,26 +51,26 @@ import Footer from "@/components/Footer.astro";
           >See product</a
         >
       </div>
-    </section>
-    <!-- XX99 Mark I Headphones -->
-    <section
-      class="mx-6 mb-[7.5rem] flex flex-col items-center justify-center gap-8 md:ml-[2.44rem] md:mr-10 md:gap-9 xl:mx-[10.31rem] xl:mb-40 xl:flex-row-reverse xl:justify-between"
-    >
       <picture>
         <source
           media="(min-width: 1440px)"
-          srcset="/assets/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg"
+          srcset="/assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg"
         />
         <source
           media="(min-width: 768px)"
-          srcset="/assets/product-xx99-mark-one-headphones/tablet/image-category-page-preview.jpg"
+          srcset="/assets/product-xx99-mark-two-headphones/tablet/image-category-page-preview.jpg"
         />
         <img
-          src="/assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg"
-          alt="Photo of XX99 Mark I Headphones"
+          src="/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg"
+          alt=" XX99 Mark II Headphones"
           class="rounded-lg object-cover xl:h-[35rem] xl:w-[33.75rem]"
         />
       </picture>
+    </section>
+    <!-- XX99 Mark I Headphones -->
+    <section
+      class="mx-6 mb-[7.5rem] flex flex-col-reverse items-center justify-center gap-8 md:ml-[2.44rem] md:mr-10 md:gap-9 xl:mx-[10.31rem] xl:mb-40 xl:flex-row xl:justify-between"
+    >
       <div
         class="flex flex-col items-center justify-center gap-6 text-center md:gap-4 xl:items-start xl:justify-start xl:text-left"
       >
@@ -107,26 +92,26 @@ import Footer from "@/components/Footer.astro";
           >See product</a
         >
       </div>
-    </section>
-    <!-- XX59 Headphones -->
-    <section
-      class="mx-6 mb-[7.5rem] flex flex-col items-center justify-center gap-8 md:ml-[2.44rem] md:mr-10 md:gap-9 xl:mx-[10.31rem] xl:mb-40 xl:flex-row xl:justify-between"
-    >
       <picture>
         <source
           media="(min-width: 1440px)"
-          srcset="/assets/product-xx59-headphones/desktop/image-category-page-preview.jpg"
+          srcset="/assets/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg"
         />
         <source
           media="(min-width: 768px)"
-          srcset="/assets/product-xx59-headphones/tablet/image-category-page-preview.jpg"
+          srcset="/assets/product-xx99-mark-one-headphones/tablet/image-category-page-preview.jpg"
         />
         <img
-          src="/assets/product-xx59-headphones/mobile/image-category-page-preview.jpg"
-          alt="Photo of XX59 Headphones"
+          src="/assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg"
+          alt=" XX99 Mark I Headphones"
           class="rounded-lg object-cover xl:h-[35rem] xl:w-[33.75rem]"
         />
       </picture>
+    </section>
+    <!-- XX59 Headphones -->
+    <section
+      class="mx-6 mb-[7.5rem] flex flex-col-reverse items-center justify-center gap-8 md:ml-[2.44rem] md:mr-10 md:gap-9 xl:mx-[10.31rem] xl:mb-40 xl:flex-row-reverse xl:justify-between"
+    >
       <div
         class="flex flex-col items-center justify-center gap-6 text-center md:gap-4 xl:items-start xl:justify-start xl:text-left"
       >
@@ -148,6 +133,21 @@ import Footer from "@/components/Footer.astro";
           >See product</a
         >
       </div>
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="/assets/product-xx59-headphones/desktop/image-category-page-preview.jpg"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/assets/product-xx59-headphones/tablet/image-category-page-preview.jpg"
+        />
+        <img
+          src="/assets/product-xx59-headphones/mobile/image-category-page-preview.jpg"
+          alt=" XX59 Headphones"
+          class="rounded-lg object-cover xl:h-[35rem] xl:w-[33.75rem]"
+        />
+      </picture>
     </section>
     <!-- Best Audio Gear -->
     <BestAudioGear />

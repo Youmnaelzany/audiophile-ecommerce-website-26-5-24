@@ -1,0 +1,207 @@
+---
+import Header from "@/components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import "@/styles/globals.css";
+import BestAudioGear from "@/components/BestAudioGear.astro";
+import Footer from "@/components/Footer.astro";
+---
+
+<Layout title="Audiophile e-commerce website.">
+  <!-- The Header -->
+  <Header />
+  <!-- The Main Body -->
+  <main>
+    <!-- Go Back Link -->
+    <section class="">
+      <a href="/" class="">Go back</a>
+    </section>
+    <!-- XX99 Mark II Headphones -->
+    <section
+      class="mx-6 mb-[7.5rem] mt-16 flex flex-col-reverse items-center justify-center gap-8 md:ml-[2.44rem] md:mr-10 md:mt-[7.5rem] md:gap-9 xl:mx-[10.31rem] xl:mb-40 xl:mt-40 xl:flex-row-reverse xl:justify-between"
+    >
+      <div
+        class="flex flex-col items-center justify-center gap-6 text-center md:gap-4 xl:items-start xl:justify-start xl:text-left"
+      >
+        <h2
+          class="unpercase text-sm font-normal leading-normal tracking-[0.625rem] text-[#D87D4A]"
+        >
+          New product
+        </h2>
+        <h2
+          class="w-[20.4375rem] text-[1.75rem] font-bold uppercase leading-normal tracking-[0.0625rem] text-black md:mb-4 md:w-[35.75rem] md:text-[2.5rem] md:leading-[2.75rem] md:tracking-[0.08931rem] xl:w-[27.8125rem]"
+        >
+          XX99 Mark II Headphones
+        </h2>
+        <p
+          class="w-[20.4375rem] text-[0.9375rem] font-normal leading-[1.5625rem] text-black/50 md:mb-2 md:w-[35.75rem] xl:mb-4 xl:w-[27.8125rem]"
+        >
+          The new XX99 Mark II headphones is the pinnacle of pristine audio. It
+          redefines your premium headphone experience by reproducing the
+          balanced depth and precision of studio-quality sound.
+        </p>
+        <h3 class="">$2,999</h3>
+        <div class="flex items-center justify-center gap-4">
+          <!-- Add/Remove Product Counter -->
+          <div class=""><button type="button">1</button></div>
+          <!-- Add To Cart -->
+          <div class=""><button type="submit">Add to cart</button></div>
+        </div>
+      </div>
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="/assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/assets/product-xx99-mark-two-headphones/tablet/image-category-page-preview.jpg"
+        />
+        <img
+          src="/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg"
+          alt=" XX99 Mark II Headphones"
+          class="rounded-lg object-cover xl:h-[35rem] xl:w-[33.75rem]"
+        />
+      </picture>
+    </section>
+    <!-- Features & Includes -->
+    <section class="">
+      <!-- Features -->
+      <div class="">
+        <h2 class="">Features</h2>
+        <p class="">
+          Featuring a genuine leather head strap and premium earcups, these
+          headphones deliver superior comfort for those who like to enjoy
+          endless listening. It includes intuitive controls designed for any
+          situation. Whether you&#39;re taking a business call or just in your
+          own personal space, the auto on/off and pause features ensure that
+          you&#39;ll never miss a beat.
+        </p>
+        <p class="">
+          The advanced Active Noise Cancellation with built-in equalizer allow
+          you to experience your audio world on your terms. It lets you enjoy
+          your audio in peace, but quickly interact with your surroundings when
+          you need to. Combined with Bluetooth 5. 0 compliant connectivity and
+          17 hour battery life, the XX99 Mark II headphones gives you superior
+          sound, cutting-edge technology, and a modern design aesthetic.
+        </p>
+      </div>
+      <!-- Includes -->
+      <div class="">
+        <h2 class="">In the box</h2>
+        <h3 class=""><span class="">1x</span> Headphone unit</h3>
+        <h3 class=""><span class="">2x </span>Replacement earcups</h3>
+        <h3 class=""><span class="">1x</span> User manual</h3>
+        <h3 class=""><span class="">1x</span> 3.5mm 5m audio cable</h3>
+        <h3 class=""><span class="">1x</span> Travel bag</h3>
+      </div>
+    </section>
+    <!-- May Also Like -->
+    <section class="">
+      <div class="">
+        <h2 class="">You may also like</h2>
+      </div>
+      <!-- The Products  -->
+      <div class="">
+        <!-- XX99 Mark I Headphones -->
+        <div class="">
+          <h3 class="">XX99 Mark I</h3>
+          <a href="/product-xx99-mark-one-headphones" class="">See product</a>
+        </div>
+        <!-- XX59 Headphones -->
+        <div class="">
+          <h3 class="">XX59</h3>
+          <a href="/product-xx59-headphones" class="">See product</a>
+        </div>
+        <!-- ZX9 speaker -->
+        <div class="">
+          <h3 class="">ZX9 speaker</h3>
+          <a href="/product-zx9-speaker" class="">See product</a>
+        </div>
+      </div>
+    </section>
+    <!-- Line Of The Products -->
+    <section
+      class="mx-6 mb-[7.5rem] mt-20 flex flex-col items-center gap-[4.25rem] md:mb-24 md:ml-10 md:mr-[2.44rem] md:flex-row md:justify-between md:gap-[0.63rem] xl:mx-[10.31rem] xl:mb-[10.5rem] xl:gap-[1.88rem]"
+    >
+      <!-- Headphones -->
+      <div
+        class="relative flex h-[10.3125rem] w-[20.4375rem] flex-col items-center justify-center rounded-lg bg-[#F1F1F1] pb-[1.37rem] pt-[5.5rem] text-center md:w-[13.9375rem] xl:h-[12.75rem] xl:w-[21.875rem] xl:pt-[7.25rem]"
+      >
+        <img
+          src="/assets/shared/desktop/image-category-thumbnail-headphones.png"
+          alt="Photo of Headphones"
+          class="absolute top-[-3.5rem] w-40"
+        />
+        <h3
+          class="mb-[1.06rem] text-[0.9375rem] font-bold leading-normal tracking-[0.06694rem] text-black xl:mb-[0.94rem] xl:text-lg"
+        >
+          Headphones
+        </h3>
+        <a
+          href="/headphones"
+          class="flex cursor-pointer items-center gap-[0.83rem] text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-black/50 transition-colors duration-300 ease-in hover:text-[#D87D4A]"
+          >Shop
+          <img
+            src="/assets/shared/desktop/icon-arrow-right.svg"
+            alt="arrow"
+            class=""
+          />
+        </a>
+      </div>
+      <!-- Speakers -->
+      <div
+        class="relative flex h-[10.3125rem] w-[20.4375rem] flex-col items-center justify-center rounded-lg bg-[#F1F1F1] pb-[1.37rem] pt-[5.5rem] text-center md:w-[13.9375rem] xl:h-[12.75rem] xl:w-[21.875rem] xl:pt-[7.25rem]"
+      >
+        <img
+          src="/assets/shared/desktop/image-category-thumbnail-speakers.png"
+          alt="Photo of Speakers"
+          class="absolute top-[-3.5rem] w-40"
+        />
+        <h3
+          class="mb-[1.06rem] text-[0.9375rem] font-bold leading-normal tracking-[0.06694rem] text-black xl:mb-[0.94rem] xl:text-lg"
+        >
+          speakers
+        </h3>
+        <a
+          href="/speakers"
+          class="flex cursor-pointer items-center gap-[0.83rem] text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-black/50 transition-colors duration-300 ease-in hover:text-[#D87D4A]"
+          >Shop
+          <img
+            src="/assets/shared/desktop/icon-arrow-right.svg"
+            alt="arrow"
+            class=""
+          />
+        </a>
+      </div>
+      <!-- Earphones -->
+      <div
+        class="relative flex h-[10.3125rem] w-[20.4375rem] flex-col items-center justify-center rounded-lg bg-[#F1F1F1] pb-[1.37rem] pt-[5.5rem] text-center md:w-[13.9375rem] xl:h-[12.75rem] xl:w-[21.875rem] xl:pt-[7.25rem]"
+      >
+        <img
+          src="/assets/shared/desktop/image-category-thumbnail-earphones.png"
+          alt="Photo of Earphones"
+          class="absolute top-[-3.5rem] w-40"
+        />
+        <h3
+          class="mb-[1.06rem] text-[0.9375rem] font-bold leading-normal tracking-[0.06694rem] text-black xl:mb-[0.94rem] xl:text-lg"
+        >
+          earphones
+        </h3>
+        <a
+          href="/earphones"
+          class="flex cursor-pointer items-center gap-[0.83rem] text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-black/50 transition-colors duration-300 ease-in hover:text-[#D87D4A]"
+          >Shop
+          <img
+            src="/assets/shared/desktop/icon-arrow-right.svg"
+            alt="arrow"
+            class=""
+          />
+        </a>
+      </div>
+    </section>
+    <!-- Best Audio Gear -->
+    <BestAudioGear />
+  </main>
+  <!-- The Footer -->
+  <Footer />
+</Layout>
