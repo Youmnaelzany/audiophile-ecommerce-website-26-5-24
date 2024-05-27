@@ -1,0 +1,75 @@
+---
+import Header from "@/components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import "@/styles/globals.css";
+import BestAudioGear from "@/components/BestAudioGear.astro";
+import Footer from "@/components/Footer.astro";
+---
+
+<Layout title="Audiophile e-commerce website.">
+  <!-- The Header -->
+  <Header />
+  <!-- The Main Body -->
+  <main>
+    <!-- Intro Headphones Products-->
+    <section
+      class="xl:h-15rem flex h-[6.44rem] w-[100%] items-center justify-center bg-black leading-[2.75rem] md:h-[15.44rem] md:text-[2.5rem] md:tracking-[0.08931rem]"
+    >
+      <h1
+        class="text-[1.75rem] font-bold uppercase leading-normal tracking-[0.125rem] text-white"
+      >
+        earphones
+      </h1>
+    </section>
+    <!--   YX1 wireless earphones -->
+    <section
+      class="mx-6 mb-[7.5rem] mt-16 flex flex-col items-center justify-center gap-8 md:ml-[2.44rem] md:mr-10 md:mt-[7.5rem] md:gap-9 xl:mx-[10.31rem] xl:mb-40 xl:mt-40 xl:flex-row xl:justify-between"
+    >
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="/assets/product-yx1-earphones/desktop/image-category-page-preview.jpg"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/assets/product-yx1-earphones/tablet/image-category-page-preview.jpg"
+        />
+        <img
+          src="/assets/product-yx1-earphones/mobile/image-category-page-preview.jpg"
+          alt="Photo of ZX9 Speaker"
+          class="rounded-lg object-cover xl:h-[35rem] xl:w-[33.75rem]"
+        />
+      </picture>
+      <div
+        class="flex flex-col items-center justify-center gap-6 text-center md:gap-4 xl:items-start xl:justify-start xl:text-left"
+      >
+        <h2
+          class="unpercase text-sm font-normal leading-normal tracking-[0.625rem] text-[#D87D4A]"
+        >
+          New product
+        </h2>
+        <h2
+          class="w-[13.438rem] text-[1.75rem] font-bold uppercase leading-normal tracking-[0.0625rem] text-black md:mb-4 md:w-[18.438rem] md:text-[2.5rem] md:leading-[2.75rem] md:tracking-[0.08931rem]"
+        >
+          YX1 wireless earphones
+        </h2>
+        <p
+          class="w-[20.4375rem] text-[0.9375rem] font-normal leading-[1.5625rem] text-black/50 md:mb-2 md:w-[35.75rem] xl:mb-4 xl:w-[27.8125rem]"
+        >
+          Tailor your listening experience with bespoke dynamic drivers from the
+          new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even
+          in noisy environments with its active noise cancellation feature.
+        </p>
+        <a
+          href="/product-earphones"
+          class="flex h-12 w-40 cursor-pointer items-center justify-center bg-[#D87D4A] text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-white transition-colors duration-300 ease-in hover:bg-[#FBAF85]"
+          >See product</a
+        >
+      </div>
+    </section>
+    <!-- Best Audio Gear -->
+    <BestAudioGear />
+  </main>
+  <!-- The Footer -->
+  <Footer />
+</Layout>
