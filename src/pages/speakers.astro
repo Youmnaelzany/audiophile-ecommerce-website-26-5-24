@@ -1,0 +1,118 @@
+---
+import Header from "@/components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import "@/styles/globals.css";
+import BestAudioGear from "@/components/BestAudioGear.astro";
+import Footer from "@/components/Footer.astro";
+---
+
+<Layout title="Audiophile e-commerce website.">
+  <!-- The Header -->
+  <Header />
+  <!-- The Main Body -->
+  <main>
+    <!-- Intro Headphones Products-->
+    <section
+      class="xl:h-15rem[] flex h-[6.44rem] w-[100%] items-center justify-center bg-black leading-[2.75rem] md:h-[15.44rem] md:text-[2.5rem] md:tracking-[0.08931rem]"
+    >
+      <h1
+        class="text-[1.75rem] font-bold uppercase leading-normal tracking-[0.125rem] text-white"
+      >
+        Speakers
+      </h1>
+    </section>
+    <!-- ZX9 Speaker -->
+    <section
+      class="mx-6 mb-[7.5rem] mt-16 flex flex-col items-center justify-center gap-8 md:ml-[2.44rem] md:mr-10 md:mt-[7.5rem] md:gap-9 xl:mx-[10.31rem] xl:mb-40 xl:mt-40 xl:flex-row xl:justify-between"
+    >
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="/assets/shared/desktop/image-zx9-speaker.jpg"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/assets/shared/mobile/image-zx9-speaker.jpg"
+        />
+        <img
+          src="/assets/shared/tablet/image-zx9-speaker.jpg"
+          alt="Photo of ZX9 Speaker"
+          class="h-[22rem] w-[20.4375rem] rounded-lg object-cover md:w-[43.0625rem] xl:h-[35rem] xl:w-[33.75rem]"
+        />
+      </picture>
+      <div
+        class="flex flex-col items-center justify-center gap-6 text-center md:gap-4 xl:items-start xl:justify-start xl:text-left"
+      >
+        <h2
+          class="unpercase text-sm font-normal leading-normal tracking-[0.625rem] text-[#D87D4A]"
+        >
+          New product
+        </h2>
+        <h2
+          class="w-[20.4375rem] text-[1.75rem] font-bold uppercase leading-normal tracking-[0.0625rem] text-black md:mb-4 md:w-[35.75rem] md:text-[2.5rem] md:leading-[2.75rem] md:tracking-[0.08931rem] xl:w-[27.8125rem]"
+        >
+          ZX9 speaker
+        </h2>
+        <p
+          class="w-[20.4375rem] text-[0.9375rem] font-normal leading-[1.5625rem] text-black/50 md:mb-2 md:w-[35.75rem] xl:mb-4 xl:w-[27.8125rem]"
+        >
+          Upgrade your sound system with the all new ZX9 active speaker.
+          It&#39;s a bookshelf speaker system that offers truly wireless
+          connectivity -- creating new possibilities for more pleasing and
+          practical audio setups.
+        </p>
+        <a
+          href="/product-zx9-speaker"
+          class="flex h-12 w-40 cursor-pointer items-center justify-center bg-[#D87D4A] text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-white transition-colors duration-300 ease-in hover:bg-[#FBAF85]"
+          >See product</a
+        >
+      </div>
+    </section>
+    <!-- ZX7 Speaker -->
+    <section
+      class="mx-6 mb-[7.5rem] flex flex-col items-center justify-center gap-8 md:ml-[2.44rem] md:mr-10 md:gap-9 xl:mx-[10.31rem] xl:mb-40 xl:flex-row-reverse xl:justify-between"
+    >
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="/assets/shared/desktop/image-zx7-speaker.jpg"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/assets/shared/mobile/image-zx7-speaker.jpg"
+        />
+        <img
+          src="/assets/shared/tablet/image-zx7-speaker.jpg"
+          alt="Photo of ZX7 Speaker
+          "
+          class="h-[22rem] w-[20.4375rem] rounded-lg object-cover md:w-[43.0625rem] xl:h-[35rem] xl:w-[33.75rem]"
+        />
+      </picture>
+      <div
+        class="flex flex-col items-center justify-center gap-6 text-center md:gap-4 xl:items-start xl:justify-start xl:text-left"
+      >
+        <h2
+          class="w-[20.4375rem] text-[1.75rem] font-bold uppercase leading-normal tracking-[0.0625rem] text-black md:mb-4 md:w-[35.75rem] md:text-[2.5rem] md:leading-[2.75rem] md:tracking-[0.08931rem] xl:w-[27.8125rem]"
+        >
+          ZX7 speaker
+        </h2>
+        <p
+          class="w-[20.4375rem] text-[0.9375rem] font-normal leading-[1.5625rem] text-black/50 md:mb-2 md:w-[35.75rem] xl:mb-4 xl:w-[27.8125rem]"
+        >
+          Stream high quality sound wirelessly with minimal loss. The ZX7
+          bookshelf speaker uses high-end audiophile components that represents
+          the top of the line powered speakers for home or studio use.
+        </p>
+        <a
+          href="/product-zx7-speaker"
+          class="flex h-12 w-40 cursor-pointer items-center justify-center bg-[#D87D4A] text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-white transition-colors duration-300 ease-in hover:bg-[#FBAF85]"
+          >See product</a
+        >
+      </div>
+    </section>
+    <!-- Best Audio Gear -->
+    <BestAudioGear />
+  </main>
+  <!-- The Footer -->
+  <Footer />
+</Layout>
