@@ -12,63 +12,109 @@ import Footer from "@/components/Footer.astro";
   <!-- The Main Body -->
   <main>
     <!-- Go Back Link -->
-    <section class="">
-      <a href="/" class="">Go back</a>
+    <section
+      class="mx-6 mb-6 mt-4 md:mr-[2.44rem] md:mt-[2.06rem] xl:mb-14 xl:ml-[10.31rem] xl:mt-[4.94rem]"
+    >
+      <a
+        href="/"
+        class="text-[0.9375rem] font-normal leading-[1.5625rem] text-black/50"
+        >Go Back</a
+      >
     </section>
     <!-- XX99 Mark II Headphones -->
     <section
-      class="mx-6 mb-[7.5rem] mt-16 flex flex-col-reverse items-center justify-center gap-8 md:ml-[2.44rem] md:mr-10 md:mt-[7.5rem] md:gap-9 xl:mx-[10.31rem] xl:mb-40 xl:mt-40 xl:flex-row-reverse xl:justify-between"
+      class="mx-6 mb-[5.5rem] flex flex-col-reverse items-center justify-center gap-8 md:mb-[7.5rem] md:ml-[2.44rem] md:mr-10 md:flex-row-reverse md:justify-between md:gap-[4.34rem] xl:mx-[10.31rem] xl:mb-40 xl:gap-[7.81rem]"
     >
       <div
-        class="flex flex-col items-center justify-center gap-6 text-center md:gap-4 xl:items-start xl:justify-start xl:text-left"
+        class="flex flex-col items-center justify-center gap-6 text-center md:items-start md:justify-start md:gap-4 md:text-left"
       >
         <h2
-          class="unpercase text-sm font-normal leading-normal tracking-[0.625rem] text-[#D87D4A]"
+          class="unpercase text-sm font-normal leading-normal tracking-[0.625rem] text-[#D87D4A] md:mb-[0.6rem]"
         >
           New product
         </h2>
         <h2
-          class="w-[20.4375rem] text-[1.75rem] font-bold uppercase leading-normal tracking-[0.0625rem] text-black md:mb-4 md:w-[35.75rem] md:text-[2.5rem] md:leading-[2.75rem] md:tracking-[0.08931rem] xl:w-[27.8125rem]"
+          class="w-[20.4375rem] text-[1.75rem] font-bold uppercase leading-normal tracking-[0.0625rem] text-black md:mb-4 md:w-[21.1875rem] md:text-[2.5rem] md:leading-[2.75rem] md:tracking-[0.08931rem] xl:w-[27.8125rem]"
         >
           XX99 Mark II Headphones
         </h2>
         <p
-          class="w-[20.4375rem] text-[0.9375rem] font-normal leading-[1.5625rem] text-black/50 md:mb-2 md:w-[35.75rem] xl:mb-4 xl:w-[27.8125rem]"
+          class="w-[20.4375rem] text-[0.9375rem] font-normal leading-[1.5625rem] text-black/50 md:mb-4 md:w-[21.1875rem] xl:mb-4 xl:w-[27.8125rem]"
         >
           The new XX99 Mark II headphones is the pinnacle of pristine audio. It
           redefines your premium headphone experience by reproducing the
           balanced depth and precision of studio-quality sound.
         </p>
-        <h3 class="">$2,999</h3>
+        <h3
+          class="mb-[0.94rem] text-xl font-bold uppercase leading-normal tracking-[0.08038rem] text-black md:mb-[0.94rem] xl:mb-[1.94rem]"
+        >
+          $2,999
+        </h3>
         <div class="flex items-center justify-center gap-4">
           <!-- Add/Remove Product Counter -->
-          <div class=""><button type="button">1</button></div>
+          <div
+            class="flex h-12 w-[7.5rem] items-center justify-between bg-[#F1F1F1] px-[0.94rem]"
+          >
+            <button
+              id="removeProduct"
+              type="button"
+              class="text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-black/25"
+              >-</button
+            >
+            <button
+              id="productCount"
+              type="button"
+              class="text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-black/25"
+              >1</button
+            >
+            <button
+              id="addProduct"
+              type="button"
+              class="text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-black/25"
+              >+</button
+            >
+          </div>
           <!-- Add To Cart -->
-          <div class=""><button type="submit">Add to cart</button></div>
+          <div class="">
+            <button
+              id="addToCart"
+              type="submit"
+              class="h-12 w-40 bg-[#D87D4A] text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-white transition-colors duration-300 ease-in hover:bg-[#FBAF85]"
+              >Add to cart</button
+            >
+          </div>
         </div>
       </div>
       <picture>
         <source
           media="(min-width: 1440px)"
-          srcset="/assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg"
+          srcset="/assets/product-xx99-mark-two-headphones/desktop/image-product.jpg"
         />
         <source
           media="(min-width: 768px)"
-          srcset="/assets/product-xx99-mark-two-headphones/tablet/image-category-page-preview.jpg"
+          srcset="/assets/product-xx99-mark-two-headphones/tablet/image-product.jpg"
         />
         <img
-          src="/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg"
+          src="/assets/product-xx99-mark-two-headphones/mobile/image-product.jpg"
           alt=" XX99 Mark II Headphones"
           class="rounded-lg object-cover xl:h-[35rem] xl:w-[33.75rem]"
         />
       </picture>
     </section>
     <!-- Features & Includes -->
-    <section class="">
+    <section
+      class="mx-6 mb-[5.5rem] flex flex-col gap-[5.5rem] md:mb-[7.5rem] md:ml-[2.44rem] md:mr-10 md:gap-[7.5rem] xl:mx-[10.31rem] xl:mb-40 xl:flex-row xl:items-start xl:justify-between"
+    >
       <!-- Features -->
-      <div class="">
-        <h2 class="">Features</h2>
-        <p class="">
+      <div class="flex flex-col gap-8">
+        <h2
+          class="text-2xl font-bold uppercase leading-9 tracking-[0.05356rem] text-black"
+        >
+          Features
+        </h2>
+        <p
+          class="w-[20.4375rem] text-[0.9375rem] font-normal leading-[1.5625rem] text-black/50 md:w-[43.0625rem] xl:w-[39.6875rem]"
+        >
           Featuring a genuine leather head strap and premium earcups, these
           headphones deliver superior comfort for those who like to enjoy
           endless listening. It includes intuitive controls designed for any
@@ -76,7 +122,9 @@ import Footer from "@/components/Footer.astro";
           own personal space, the auto on/off and pause features ensure that
           you&#39;ll never miss a beat.
         </p>
-        <p class="">
+        <p
+          class="w-[20.4375rem] text-[0.9375rem] font-normal leading-[1.5625rem] text-black/50 md:w-[43.0625rem] xl:w-[39.6875rem]"
+        >
           The advanced Active Noise Cancellation with built-in equalizer allow
           you to experience your audio world on your terms. It lets you enjoy
           your audio in peace, but quickly interact with your surroundings when
@@ -86,42 +134,152 @@ import Footer from "@/components/Footer.astro";
         </p>
       </div>
       <!-- Includes -->
-      <div class="">
-        <h2 class="">In the box</h2>
-        <h3 class=""><span class="">1x</span> Headphone unit</h3>
-        <h3 class=""><span class="">2x </span>Replacement earcups</h3>
-        <h3 class=""><span class="">1x</span> User manual</h3>
-        <h3 class=""><span class="">1x</span> 3.5mm 5m audio cable</h3>
-        <h3 class=""><span class="">1x</span> Travel bag</h3>
+      <div class="flex flex-col gap-6 md:flex-row xl:flex-col xl:gap-8">
+        <h2
+          class="w-[20.4375rem] text-2xl font-bold uppercase leading-9 tracking-[0.05356rem] text-black"
+        >
+          In the box
+        </h2>
+        <div class="">
+          <h3
+            class="text-[0.9375rem] font-normal leading-[1.5625rem] text-black/50"
+          >
+            <span class="mr-6 text-[#D87D4A]">1x</span> Headphone unit
+          </h3>
+          <h3
+            class="text-[0.9375rem] font-normal leading-[1.5625rem] text-black/50"
+          >
+            <span class="mr-6 text-[#D87D4A]">2x </span>Replacement earcups
+          </h3>
+          <h3
+            class="text-[0.9375rem] font-normal leading-[1.5625rem] text-black/50"
+          >
+            <span class="mr-6 text-[#D87D4A]">1x</span> User manual
+          </h3>
+          <h3
+            class="text-[0.9375rem] font-normal leading-[1.5625rem] text-black/50"
+          >
+            <span class="mr-6 text-[#D87D4A]">1x</span> 3.5mm 5m audio cable
+          </h3>
+          <h3
+            class="text-[0.9375rem] font-normal leading-[1.5625rem] text-black/50"
+          >
+            <span class="mr-6 text-[#D87D4A]">1x</span> Travel bag
+          </h3>
+        </div>
       </div>
     </section>
     <!-- May Also Like -->
-    <section class="">
-      <div class="">
-        <h2 class="">You may also like</h2>
+    <section
+      class="mx-6 mb-[7.5rem] flex flex-col gap-10 md:ml-[2.44rem] md:mr-10 md:gap-14 xl:mx-[10.31rem] xl:mb-40 xl:gap-16"
+    >
+      <!-- THE Title -->
+      <div class="flex items-center justify-center text-center">
+        <h2
+          class="text-2xl font-bold uppercase leading-9 tracking-[0.05356rem] text-black md:text-[2rem] md:tracking-[0.07144rem]"
+        >
+          You may also like
+        </h2>
       </div>
       <!-- The Products  -->
-      <div class="">
+      <div
+        class="flex flex-col items-center justify-center gap-14 md:flex-row md:justify-between md:gap-[0.69rem] xl:gap-[1.88rem]"
+      >
         <!-- XX99 Mark I Headphones -->
-        <div class="">
-          <h3 class="">XX99 Mark I</h3>
-          <a href="/product-xx99-mark-one-headphones" class="">See product</a>
+        <div class="flex flex-col gap-8 md:gap-10">
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="/public/assets/shared/desktop/image-xx99-mark-one-headphones.jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/public/assets/shared/tablet/image-xx99-mark-one-headphones.jpg"
+            />
+            <img
+              src="/public/assets/shared/mobile/image-xx99-mark-one-headphones.jpg"
+              alt="XX99 Mark I Headphones"
+              class=""
+            />
+          </picture>
+          <div class="flex flex-col items-center justify-center gap-8">
+            <h3
+              class="text-2xl font-bold uppercase leading-normal tracking-[0.10713rem] text-black"
+            >
+              XX99 Mark I
+            </h3>
+            <a
+              href="/product-xx99-mark-one-headphones"
+              class="flex h-12 w-40 items-center justify-center bg-[#D87D4A] text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-white transition-colors duration-300 ease-in hover:bg-[#FBAF85]"
+              >See product</a
+            >
+          </div>
         </div>
         <!-- XX59 Headphones -->
-        <div class="">
-          <h3 class="">XX59</h3>
-          <a href="/product-xx59-headphones" class="">See product</a>
+        <div class="flex flex-col gap-8 md:gap-10">
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="/public/assets/shared/desktop/image-xx59-headphones.jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/public/assets/shared/tablet/image-xx59-headphones.jpg"
+            />
+            <img
+              src="/public/assets/shared/mobile/image-xx59-headphones.jpg"
+              alt="XX59 Headphones"
+              class=""
+            />
+          </picture>
+          <div class="flex flex-col items-center justify-center gap-8">
+            <h3
+              class="text-2xl font-bold uppercase leading-normal tracking-[0.10713rem] text-black"
+            >
+              XX59
+            </h3>
+            <a
+              href="/product-xx59-headphones"
+              class="flex h-12 w-40 items-center justify-center bg-[#D87D4A] text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-white transition-colors duration-300 ease-in hover:bg-[#FBAF85]"
+              >See product</a
+            >
+          </div>
         </div>
         <!-- ZX9 speaker -->
-        <div class="">
-          <h3 class="">ZX9 speaker</h3>
-          <a href="/product-zx9-speaker" class="">See product</a>
+        <div class="flex flex-col gap-8 md:gap-10">
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="/public/assets/shared/desktop/image-zx9-speaker.jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/public/assets/shared/tablet/image-zx9-speaker.jpg"
+            />
+            <img
+              src="/public/assets/shared/mobile/image-zx9-speaker.jpg"
+              alt="ZX9 speaker"
+              class=""
+            />
+          </picture>
+          <div class="flex flex-col items-center justify-center gap-8">
+            <h3
+              class="text-2xl font-bold uppercase leading-normal tracking-[0.10713rem] text-black"
+            >
+              ZX9 speaker
+            </h3>
+            <a
+              href="/product-zx9-speaker"
+              class="flex h-12 w-40 items-center justify-center bg-[#D87D4A] text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-white transition-colors duration-300 ease-in hover:bg-[#FBAF85]"
+              >See product</a
+            >
+          </div>
         </div>
       </div>
     </section>
     <!-- Line Of The Products -->
     <section
-      class="mx-6 mb-[7.5rem] mt-20 flex flex-col items-center gap-[4.25rem] md:mb-24 md:ml-10 md:mr-[2.44rem] md:flex-row md:justify-between md:gap-[0.63rem] xl:mx-[10.31rem] xl:mb-[10.5rem] xl:gap-[1.88rem]"
+      class="mx-6 mb-[7.5rem] mt-40 flex flex-col items-center gap-[4.25rem] md:mb-24 md:ml-10 md:mr-[2.44rem] md:flex-row md:justify-between md:gap-[0.63rem] xl:mx-[10.31rem] xl:mb-[10.5rem] xl:gap-[1.88rem]"
     >
       <!-- Headphones -->
       <div
@@ -205,3 +363,19 @@ import Footer from "@/components/Footer.astro";
   <!-- The Footer -->
   <Footer />
 </Layout>
+
+<script is:inline>
+  const addToCart = document.getElementById("addToCart");
+  const removeProduct = document.getElementById("removeProduct");
+  const addProduct = document.getElementById("addProduct");
+  const productCount = document.getElementById("productCount");
+  addToCart.addEventListener("click", () => {
+    window.location.href = "/checkout.html";
+  });
+  removeProduct.addEventListener("click", () => {
+    productCount.innerHTML = parseInt(productCount.innerHTML) - 1;
+  });
+  addProduct.addEventListener("click", () => {
+    productCount.innerHTML = parseInt(productCount.innerHTML) + 1;
+  });
+</script>
