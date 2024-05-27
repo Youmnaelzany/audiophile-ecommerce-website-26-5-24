@@ -3,16 +3,16 @@ import "@/styles/globals.css";
 ---
 
 <header
-  class="relative z-50 flex h-[5.625rem] items-center justify-between px-6 pb-[2.06rem] pt-8 md:pl-[2.44rem] md:pt-9 xl:h-[6.0625rem] xl:px-[10.31rem] xl:pb-[2.31rem] xl:pt-[2.19rem]"
+  class="relative z-50 flex h-[5.625rem] items-center justify-between px-6 pb-[2.06rem] pt-8 after:absolute after:bottom-0 after:left-0 after:h-[0.0625rem] after:w-[23.4375rem] after:bg-white after:opacity-[0.104] md:pl-[2.44rem] md:pt-9 md:after:left-[2.44rem] md:after:w-[43.0625rem] xl:h-[6.0625rem] xl:px-[10.31rem] xl:pb-[2.31rem] xl:pt-[2.19rem] xl:after:left-[10.31rem] xl:after:w-[69.375rem]"
 >
   <!-- Navication Buttons -->
   <div class="flex items-center justify-between gap-[4.75rem] md:gap-[2.63rem]">
     <!-- Hamburher Menu Button -->
-    <button type="button">
+    <button type="button" class="xl:hidden">
       <img
         src="/assets/shared/tablet/icon-hamburger.svg"
         alt="open Menu"
-        class="cursor-pointer xl:hidden"
+        class="cursor-pointer"
         id="openMenu"
       />
     </button>
@@ -22,7 +22,7 @@ import "@/styles/globals.css";
     >
   </div>
   <!-- Navigation Links For Desktop -->
-  <nav class="hidden xl:flex">
+  <nav class="hidden xl:-ml-28 xl:flex">
     <ul class="flex items-center justify-between gap-[2.12rem]">
       <li>
         <a
